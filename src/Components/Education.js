@@ -15,9 +15,9 @@ const Education = () => {
         <Grid className="box">
           <SchoolIcon className="i" />
           <Typography variant="span">2015</Typography>
-          <Typography variant="h3">Matrik</Typography>
+          <Typography variant="h3">Matric</Typography>
           <Typography>
-            i passed the matrik exam from govt high school manga mandi with B
+            i passed the matric exam from govt high school manga mandi with B
             grade from the lahore board. and get the Good marks from the lahor
             board.
           </Typography>

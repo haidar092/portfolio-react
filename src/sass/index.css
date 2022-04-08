@@ -49,8 +49,15 @@ body {
   background-repeat: no-repeat repeat;
 }
 
+@media (max-width: 700px) {
+  body {
+    padding-left: 0;
+  }
+}
+
 a {
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .section {
@@ -66,11 +73,13 @@ a {
   margin-top: 3rem !important;
   font-size: 2rem !important;
   border-radius: 5rem !important;
+  -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   background: #f9ca24 !important;
 }
 
@@ -107,6 +116,13 @@ header {
       -ms-flex-flow: column;
           flex-flow: column;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    display: none;
+    width: 0px;
+  }
 }
 
 header .user img {
@@ -224,8 +240,8 @@ textarea::placeholder {
 }
 
 .home .user img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .home .content {
@@ -400,7 +416,7 @@ textarea::placeholder {
 
 .education .box-container {
   width: 100%;
-  height: 60rem;
+  min-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +565,7 @@ textarea::placeholder {
 .contact .row .content .info h3 .i {
   padding-right: 1rem;
   font-size: 4rem;
-  color: #f9ca24;
+  color: #f9ca24 !important;
 }
 
 .contact .row form {

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import AnimatedCursor from "react-animated-cursor";
 ReactDOM.render(
   <React.StrictMode>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={6}
         outerSize={20}
         color="249, 202, 36"
@@ -14,7 +14,7 @@ ReactDOM.render(
         innerScale={2}
         outerScale={5}
        style={{zIndex:10000}}
-      />
+      /> */}
 
     <App />
   </React.StrictMode>,
